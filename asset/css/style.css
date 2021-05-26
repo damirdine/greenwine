@@ -1,0 +1,16 @@
+img{
+    width: 100%;
+}
+.container-card{
+    display: grid;
+    grid-gap: 15px;
+    grid-template: auto / repeat(6, 1fr);
+}
+.card{
+    display: grid;
+    min-width: 35px ;
+    background-color: brown;
+}
+button{
+    height: 35px;
+}
