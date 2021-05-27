@@ -1,20 +1,21 @@
-/*CSS SLIDER IMAGES*/
-.container{
-    display: flex;
+/***CSS SLIDER IMAGES****/
+#container{/*englobe le tout*/
+    display:flex;
+    width:100%;
     margin:50px;
+    align-items:center;
+    justify-content:center;
 }
-.container_slide{
-    width:50%;
+ .container_slide{margin:40px;} /*englobe le premier diaporama + le titre*/
+.galery{/*englobe le premier diaporama seul*/
+    box-sizing:border-box;
     margin:auto;
-}
-.galery{
-    box-sizing: border-box;
-    margin:auto;
-    padding:auto;
-    height: 331px;
+    height:331px;
     width:500px;
     overflow:hidden;
 }
+
+/*IMAGES DU PREMIER DIAPORAMA*/
 .img1{
     background-image: url('1.jpg');
 }
@@ -33,44 +34,52 @@
 .img6{
     background-image: url('1.jpg');
 }
-.slider{
+
+/*IMAGES DU SECOND DIAPORAMA*/
+.img7{
+    background-image: url('7.jpg');
+}
+.img8{
+    background-image: url('8.jpg');
+}
+.img9{
+    background-image: url('9.jpg');
+}
+.img10{
+    background-image: url('10.jpg');
+}
+.img11{
+    background-image: url('11.jpg');
+}
+.img12{
+    background-image: url('7.jpg');
+}
+
+.slider{/*premier diaporama*/
     height:100%;
     width:600%;
     display:flex;
 }
-.slide{
+.slide{/*gère les images*/
     height:100%;
     width:100%;
-    animation:5s slide infinite;
-    background-size: cover;
-    background-position: center;
+    animation:10s slide infinite;/*permet aux images de glisser indéfinimement*/
+    background-size:cover;
+    background-position:center;
 }
-.text_up{
+.text_up{/*texte du haut*/
     text-align:justify;
     width:50%;
     margin:auto;
     font-size:large;
 }
-.text_down{
+.text_down{/*text du bas*/
     text-align:justify;
     width:50%;
     margin:auto;
     font-size:large;
 }
-.title1{
-    justify-content:center;
-    align-items: center;
-    width:500px;
-    margin:auto;
-    text-align:center;
-    font-style:bold;
-    background-color: #9dd49b;
-    text-transform:uppercase;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-.title2{
-    justify-content:center;
-    align-items: center;
+.title1{/*titre vin rouge*/
     width:500px;
     margin:auto;
     text-align:center;
@@ -78,8 +87,35 @@
     text-transform:uppercase;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-p{
+.title2{/*titre vin blanc*/
+    width:500px;
+    margin:auto;
+    text-align:center;
+    background-color: #9dd49b;
+    text-transform:uppercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+p{/*gère les paragraphes*/
     padding: 5px 3px;
+}
+.container_slide2{/*englobe le second diaporama + le titre*/
+    width:100%;
+}
+.galery2{/*second diaporama*/
+    box-sizing: border-box;
+    margin:auto;
+    height:331px;
+    width:500px;
+    position:relative;
+    overflow:hidden;
+}
+.slider2{/*second diaporama*/
+    height:100%;
+    width:600%;
+    display:flex;
+}
+.bold{
+    font-weight:bold;
 }
 @keyframes slide{
     0%{
@@ -113,51 +149,60 @@ p{
         transform: translateX(-400%)
     }
 }
-.container_slide2{
-    width:50%;
+@media screen and (max-width: 600px){
+    #container{
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+    } 
+    .galery,.galery2,.container_slide,.container_slide2{
+        margin:0;
+        padding:0;
+        width:300px;
+    }
+    .title1,.title2{
+        width:300px;
+        padding:0;
+        margin-bottom:10px;
+    }
+    .text_down,.text_up{
+        width:300px;
+        margin:45px;
+    }
 }
-.galery2{
-    box-sizing: border-box;
-    margin:auto;
-    height: 331px;
-    width: 500px;
-    position:relative;
-    overflow:hidden;
 
+
+/***FIN DE CSS SLIDER IMAGES***/
+
+/***CSS FORMULAIRE CONTACT***/
+
+legend{/*Nous contacter*/
+    text-align:center;
+    font-weight: bold;
+    font-size:larger;
 }
-.img7{
-    background-image: url('7.jpg');
-    
+.box{/*contour du formulaire*/
+    width:500px;
+    border:none;
 }
-.img8{
-    background-image: url('8.jpg');
-    
+#pj{/*bouton pièce jointe*/
+    background-color: #9dd49b;
+    width:100px;
 }
-.img9{
-    background-image: url('9.jpg');
-    
+#Send{/*bouton envoyer*/
+    background-color: #5fb458;
+    margin-top:20px;
+    padding:10px;
+    width:190px;
+    color:white;
 }
-.img10{
-    background-image: url('10.jpg');
-   
+.buttons{/*contour des boutons*/
+    width:250px;
+    margin-left:40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.img11{
-    background-image: url('11.jpg');
-    
+.input{/*cadre input*/
+   display: flex;
+   width:250px;
 }
-.img12{
-    background-image: url('7.jpg');
-    
-}
-.slider2{
-    height:100%;
-    width:600%;
-    display:flex;
-}
-.bold{
-    font-weight:bold;
-}
-@media only screen and (max-width: 428px)
-{
-}
-/*FIN DE CSS SLIDER IMAGES*/
+/***FIN CSS FORMULAIRE CONTACT****/

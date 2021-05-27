@@ -8,10 +8,11 @@
     <title>GreenWine</title>
 </head>
 <body>
+     <!--HTML SLIDERS IMAGES ET TEXTES INTROS SAMIRA-->
 <div class="text_up">
     <p>Le <span class="bold">vin bio </span>est le résultat d'une viticulture qui revient à une culture de la vigne excluant produits phytosanitaires et intrants chimiques. Nous allons plus loin encore dans la démarche avec <span class="bold">le vin nature sans sulfite</span>. De la culture de la vigne à la mise en bouteille, tous nos <span class="bold">vins bio</span> respectent les terroirs dans lesquels ils sont fabriqués, les hommes et femmes qui y travaillent et bien sûr les amateurs de <span class="bold">vins </span>qui les dégustent.</p>
 </div>
-<div class="container">
+<div id="container">
     <div class="container_slide">
         <div class="galery">
             <div class="slider">
@@ -23,7 +24,6 @@
                 <div class="slide img6"></div>
             </div>
         </div>
-        
             <div class="title1">Nos Vins Rouges</div>
     </div>
     <div class="container_slide2">
@@ -38,14 +38,44 @@
             </div>
          </div>
           <div class="title2">Nos Vins Blancs</div>
-
     </div>
 </div>
-
     <p class="text_down">
-       Découvrez la sélection de belles bouteilles de vin biologique. Du Languedoc à Bordeaux en passant par toutes les régions de France et du monde, nous vous proposons un grand choix de bouteilles et cubi produits en agriculture biologique à servir à table ou à offrir. Tous nos vins sont garantis sans sulfite.
+       Découvrez la sélection de bonnes bouteilles de vin biologique. Du Languedoc à Bordeaux en passant par toutes les régions de France et du monde, nous vous proposons un grand choix de bouteilles et cubi produits en agriculture biologique à servir à table ou à offrir. Tous nos vins sont garantis sans sulfite.
     </p>
-   
-   
+
+    <!-- FIN HTML SLIDERS IMAGES ET TEXTES INTROS SAMIRA-->
+
+    
+    <!--DEBUT HTML FORMULAIRE DE CONTACT SAMIRA-->
+    <legend>Nous contacter</legend>
+    <form class="" action="index_form.html" method="post">
+        <fieldset class="box">
+            <ol>
+                <label class="form" for="LastName">Nom :</label>
+                <input class="input" type="text" name="LastName" id="LastName"  value=""/>
+            </ol> 
+            <ol>
+                <label class="form" for="FirstName">Prénom : </label>
+                <input class="input" type="text" name="FirstName" id="FirstName" placeholder=""  value=""/>
+            </ol>
+            <ol>
+                <label class="form" for="Email">Adresse mail : </label>
+                <input class="input" type="text" name="Email" id="Email" value=""/>
+            </ol>
+            <ol>
+                <label class="form" for="Message"> Message : </label>
+                <textarea class="input" name="Message" id="Message" rows="7" cols="35"></textarea>
+            </ol>
+       
+        <div class="buttons">
+            <input type="submit" name="Send" id="pj" value="Pièce jointe">
+
+            <input type="submit" name="Send" id="Send" value="Envoyer">
+        </div>
+    </fieldset>
+    </form>
+
+    <!--FIN HTML FORMULAIRE DE CONTACT SAMIRA-->
 </body>
 </html>
