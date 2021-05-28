@@ -127,19 +127,19 @@ header{
     background-image: url('asset/images/1.jpg');
 }
 .img2{
-    background-image: url('asset/images/2.jpg');
+    background-image: url('/asset/images/2.jpg');
 }
 .img3{
-    background-image: url('asset/images/3.jpg');
+    background-image: url('/asset/images/3.jpg');
 }
 .img4{
-    background-image: url('asset/images/4.jpg');
+    background-image: url('/asset/images/4.jpg');
 }
 .img5{
-    background-image: url('asset/images/5.jpg');
+    background-image: url('/asset/images/5.jpg');
 }
 .img6{
-    background-image: url('asset/images/1.jpg');
+    background-image: url('/asset/images/1.jpg');
 }
 
 /*IMAGES DU SECOND DIAPORAMA*/
