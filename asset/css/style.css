@@ -124,7 +124,7 @@ header{
 
 /*IMAGES DU PREMIER DIAPORAMA*/
 .img1{
-    background-image: url('asset/images/1.jpg');
+    background-image: url('./greewine/asset/images/1.jpg');
 }
 .img2{
     background-image: url('asset/images/2.jpg');
